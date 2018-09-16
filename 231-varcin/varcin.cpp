@@ -13,7 +13,7 @@ int main()
     int dsd (2.4423213);
     double sa,bgea=33123.23;
     cout<<dsd<<endl;
-    getchar;
+    getchar();
     
 }
 
