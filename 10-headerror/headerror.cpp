@@ -11,5 +11,6 @@ int main()
                 cout<<" "<<outside[i]<<"       ";
                 cout<<inside[i]<<endl;
         }
-        cin>>pause;
+        //cin>>i;
+        system("pause");
 }
