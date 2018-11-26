@@ -11,4 +11,5 @@ int main()
                 cout<<" "<<outside[i]<<"       ";
                 cout<<inside[i]<<endl;
         }
+        cin<<
 }
