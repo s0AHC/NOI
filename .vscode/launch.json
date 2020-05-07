@@ -9,7 +9,8 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+            //针对整个工作区目录
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe", //如果是针对单个cpp生成launch.json，可以使用这句："program": "${fileDirname}/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -23,7 +24,9 @@
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 }
-            ]
+            ],
+            "preLaunchTask": "Compile" // 与tasks.json的label相对应。     
+                   
         }
     ]
 }
